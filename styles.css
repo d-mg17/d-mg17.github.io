@@ -1,0 +1,626 @@
+/* styles.css */
+
+/* CSS Variables for Mid-Century Color Palette */
+:root {
+  /* Primary greens - forest and sage */
+  --sage-green: #87A96B;
+  --mint-cream: #E8F0E3;
+  --forest-green: #355E3B;
+  --forest-mist: #6B8E5A;
+  
+  /* Creams and soft whites */
+  --cream-silk: #F7F5F0;
+  --vanilla-cream: #F2F0E8;
+  --pearl-white: #FEFCF8;
+  --warm-ivory: #F9F6F1;
+  
+  /* Coffee and brown tones */
+  --espresso: #3C2A1E;
+  --coffee-bean: #5D4037;
+  --mocha: #6D4C36;
+  --caramel: #8B6F47;
+  
+  /* Accent colors */
+  --soft-blush: #E6D5C9;
+  --dusty-rose: #D4B5A0;
+  --warm-taupe: #C7B299;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+  color: var(--espresso);
+  background-color: var(--pearl-white);
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif;
+  color: var(--coffee-bean);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--vanilla-cream);
+  border-bottom: 1px solid var(--mint-cream);
+  z-index: 1000;
+  height: 70px;
+}
+
+.nav-container {
+  max-width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--coffee-bean);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: var(--espresso);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--forest-green);
+}
+
+/* Mobile Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: var(--coffee-bean);
+  transition: 0.3s;
+}
+
+/* Container and Layout */
+.container {
+  max-width: 100%;
+  padding: 0 3rem;
+}
+
+.section {
+  min-height: 80vh;
+  padding: 80px 0 80px;
+}
+
+/* Hero Section */
+.hero {
+  background: var(--pearl-white);
+  border-bottom: 1px solid var(--mint-cream);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60%;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: var(--coffee-bean);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--forest-green);
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--mocha);
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 1rem;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--forest-green);
+  color: var(--pearl-white);
+}
+
+.btn-primary:hover {
+  background: var(--sage-green);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--coffee-bean);
+  border: 1px solid var(--coffee-bean);
+}
+
+.btn-secondary:hover {
+  background: var(--coffee-bean);
+  color: var(--pearl-white);
+}
+
+/* Card Styles */
+.card {
+  background: var(--cream-silk);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--mint-cream);
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--forest-green);
+}
+
+.card-title {
+  color: var(--coffee-bean);
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  color: var(--espresso);
+}
+
+/* Grid Layouts */
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Skills Section */
+.skill-category {
+  background: var(--vanilla-cream);
+  padding: 2.5rem;
+  border: 1px solid var(--mint-cream);
+  text-align: left;
+}
+
+.skill-category h3 {
+  color: var(--coffee-bean);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--mint-cream);
+  padding-bottom: 0.5rem;
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.skill-list li {
+  padding: 0.75rem 0;
+  color: var(--espresso);
+  border-bottom: 1px solid var(--warm-ivory);
+}
+
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+/* Project Cards */
+.project-card {
+  background: var(--cream-silk);
+  border: 1px solid var(--mint-cream);
+  transition: border-color 0.2s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  border-color: var(--forest-green);
+}
+
+.project-image {
+  height: 180px;
+  background: var(--mint-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--forest-green);
+  border-bottom: 1px solid var(--warm-ivory);
+}
+
+.project-content {
+  padding: 2.5rem;
+}
+
+.project-title {
+  color: var(--coffee-bean);
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.tech-tag {
+  background: var(--warm-taupe);
+  color: var(--pearl-white);
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border: 1px solid var(--dusty-rose);
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  background: var(--cream-silk);
+  padding: 3rem;
+  border: 1px solid var(--mint-cream);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--coffee-bean);
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--mint-cream);
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--pearl-white);
+  color: var(--espresso);
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--forest-green);
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Experience Timeline */
+.timeline {
+  position: relative;
+  margin: 3rem 0;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: var(--mint-cream);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--warm-ivory);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--forest-green);
+  border: 2px solid var(--pearl-white);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  color: var(--sage-green);
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  color: var(--coffee-bean);
+  margin: 0.5rem 0;
+}
+
+.timeline-company {
+  color: var(--mocha);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background: var(--vanilla-cream);
+  color: var(--espresso);
+  padding: 4rem 0;
+  border-top: 1px solid var(--mint-cream);
+  text-align: left;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-content {
+  flex: 1;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  color: var(--coffee-bean);
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: var(--forest-green);
+}
+
+/* Section Spacing */
+.section-header {
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--mint-cream);
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: var(--mocha);
+  font-size: 1.1rem;
+}
+
+/* Content Layout Adjustments */
+.content-left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.content-split {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.content-split .content-main {
+  flex: 2;
+}
+
+.content-split .content-sidebar {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--vanilla-cream);
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 3rem;
+    border-bottom: 1px solid var(--mint-cream);
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .nav-container {
+    padding: 0 2rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .content-split {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .timeline {
+    padding-left: 1rem;
+  }
+  
+  .timeline-item {
+    padding-left: 2rem;
+  }
+  
+  .timeline-item::before {
+    left: -4px;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+  
+  .btn {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .card,
+  .skill-category,
+  .project-content {
+    padding: 2rem;
+  }
+}

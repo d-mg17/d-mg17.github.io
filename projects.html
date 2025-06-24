@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Diego Martínez-García</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="logo">Diego M-G</a>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="projects.html" class="nav-link active">PROJECTS</a></li>
+                <li><a href="skills.html" class="nav-link">SKILLS</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">My Project Portfolio</h1>
+                <p class="hero-subtitle">Innovation Through Code & Collaboration</p>
+                <p class="hero-description">
+                    From AI-powered platforms to real-time IoT systems, I build solutions that matter. 
+                    Each project represents a journey of problem-solving, learning, and pushing the boundaries 
+                    of what's possible with technology. Explore my work in machine learning, web development, 
+                    and embedded systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#featured-projects" class="btn btn-primary">View Projects</a>
+                    <a href="contact.html" class="btn btn-secondary">Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats Section -->
+    <section class="stats-section" style="background: var(--cream); padding: 4rem 0;">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="stat-card card fade-in-up">
+                    <div class="stat-number" style="font-size: 2.5rem; color: var(--warm-ochre); font-weight: bold;">4+</div>
+                    <div class="stat-label" style="color: var(--earthy-brown); text-transform: uppercase; letter-spacing: 1px;">Major Projects</div>
+                </div>
+                <div class="stat-card card fade-in-up delay-1">
+                    <div class="stat-number" style="font-size: 2.5rem; color: var(--warm-ochre); font-weight: bold;">8+</div>
+                    <div class="stat-label" style="color: var(--earthy-brown); text-transform: uppercase; letter-spacing: 1px;">Technologies</div>
+                </div>
+                <div class="stat-card card fade-in-up delay-2">
+                    <div class="stat-number" style="font-size: 2.5rem; color: var(--warm-ochre); font-weight: bold;">3</div>
+                    <div class="stat-label" style="color: var(--earthy-brown); text-transform: uppercase; letter-spacing: 1px;">Years Active</div>
+                </div>
+                <div class="stat-card card fade-in-up delay-3">
+                    <div class="stat-number" style="font-size: 2.5rem; color: var(--warm-ochre); font-weight: bold;">95%+</div>
+                    <div class="stat-label" style="color: var(--earthy-brown); text-transform: uppercase; letter-spacing: 1px;">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" id="featured-projects">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
+            
+            <!-- Project 1: AI Course Selection Platform -->
+            <div class="project-card fade-in-up" style="margin-bottom: 4rem;">
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="project-title">Course Selection Platform with AI Chatbot</h3>
+                        <span style="color: var(--warm-ochre); font-weight: bold; font-size: 0.9rem;">Jun-Dec 2024</span>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">
+                        Engineered an interactive platform that revolutionizes how students discover and select courses. 
+                        Features an AI-powered chatbot that understands natural language queries and provides personalized 
+                        course recommendations from a comprehensive PostgreSQL database. The platform integrates vector 
+                        database technology for semantic search capabilities.
+                    </p>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--earthy-brown); margin-bottom: 0.5rem;">Key Achievements:</h4>
+                        <ul style="color: var(--dark-brown); padding-left: 1.5rem;">
+                            <li>Implemented vector database integration for semantic course matching</li>
+                            <li>Natural language processing for intuitive user interactions</li>
+                            <li>Deployed on Heroku with scalable architecture</li>
+                            <li>Real-time chatbot responses with contextual understanding</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Heroku</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Vector Database</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;">
+                            <i class="fab fa-github" style="margin-right: 5px;"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Educational Recycling Platform -->
+            <div class="project-card fade-in-up delay-1" style="margin-bottom: 4rem;">
+                <div class="project-image">
+                    <i class="fas fa-recycle"></i>
+                </div>
+                <div class="project-content">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="project-title">Educational Recycling Platform</h3>
+                        <span style="color: var(--warm-ochre); font-weight: bold; font-size: 0.9rem;">Feb-May 2023</span>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">
+                        Developed a comprehensive web platform to promote environmental awareness and education. 
+                        Built with a React.js frontend and Flask backend, the platform features user authentication, 
+                        interactive discussion forums, and integrated calendar functionality. Containerized with Docker 
+                        for seamless deployment and scalability.
+                    </p>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--earthy-brown); margin-bottom: 0.5rem;">Key Achievements:</h4>
+                        <ul style="color: var(--dark-brown); padding-left: 1.5rem;">
+                            <li>Full-stack web application with modern React.js frontend</li>
+                            <li>Secure user authentication and session management</li>
+                            <li>Interactive discussion forums for community engagement</li>
+                            <li>Docker containerization for easy deployment and scaling</li>
+                            <li>Calendar integration for event management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Authentication</span>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;">
+                            <i class="fab fa-github" style="margin-right: 5px;"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Solar Car Dashboard -->
+            <div class="project-card fade-in-up delay-2" style="margin-bottom: 4rem;">
+                <div class="project-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="project-content">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="project-title">Solar Car Dashboard</h3>
+                        <span style="color: var(--warm-ochre); font-weight: bold; font-size: 0.9rem;">Mar 2022-Present</span>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">
+                        Designed and implemented a real-time dashboard system for solar car monitoring using web technologies 
+                        and Raspberry Pi 4 GPIO integration. The system provides live data visualization with exceptional 
+                        performance, achieving 500ms response times for critical vehicle telemetry. Features 7 key monitoring 
+                        capabilities essential for solar vehicle operation.
+                    </p>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--earthy-brown); margin-bottom: 0.5rem;">Key Achievements:</h4>
+                        <ul style="color: var(--dark-brown); padding-left: 1.5rem;">
+                            <li>Real-time data processing with 500ms response time</li>
+                            <li>Raspberry Pi 4 GPIO integration for hardware interfacing</li>
+                            <li>7 key dashboard features for comprehensive monitoring</li>
+                            <li>Responsive web interface for cross-device compatibility</li>
+                            <li>Live telemetry data visualization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">GPIO</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Real-time</span>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;">
+                            <i class="fab fa-github" style="margin-right: 5px;"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Autonomous Driving ML Model -->
+            <div class="project-card fade-in-up delay-3" style="margin-bottom: 4rem;">
+                <div class="project-image">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="project-content">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="project-title">Autonomous Driving ML Model</h3>
+                        <span style="color: var(--pear-green); font-weight: bold; font-size: 0.9rem;">Jan 2025-Present</span>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">
+                        Leading cutting-edge research in autonomous driving systems at C.A.W.T. - University of Puerto Rico Mayagüez. 
+                        Constructing comprehensive datasets and implementing advanced CNN-based image classification models. 
+                        The project focuses on real-time processing optimization while maintaining exceptional accuracy rates 
+                        for autonomous vehicle decision-making.
+                    </p>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--earthy-brown); margin-bottom: 0.5rem;">Key Achievements:</h4>
+                        <ul style="color: var(--dark-brown); padding-left: 1.5rem;">
+                            <li>95.2% accuracy in image classification tasks</li>
+                            <li>50,000+ training images dataset construction</li>
+                            <li>CNN architecture optimization for real-time processing</li>
+                            <li>Advanced computer vision techniques implementation</li>
+                            <li>Research-grade performance metrics and validation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Dataset Construction</span>
+                        <span class="tech-tag">Research</span>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;">
+                            <i class="fab fa-github" style="margin-right: 5px;"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="section" style="background: var(--cream);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Technologies I Work With</h2>
+            <div class="grid grid-3">
+                <div class="card fade-in-up">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-brain" style="font-size: 3rem; color: var(--warm-ochre);"></i>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">AI & Machine Learning</h3>
+                    <div class="project-tech" style="justify-content: center; flex-wrap: wrap;">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="card fade-in-up delay-1">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-code" style="font-size: 3rem; color: var(--pear-green);"></i>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Web Development</h3>
+                    <div class="project-tech" style="justify-content: center; flex-wrap: wrap;">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="card fade-in-up delay-2">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-database" style="font-size: 3rem; color: var(--sage-green);"></i>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Data & Infrastructure</h3>
+                    <div class="project-tech" style="justify-content: center; flex-wrap: wrap;">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Heroku</span>
+                        <span class="tech-tag">Raspberry Pi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" style="background: linear-gradient(135deg, var(--warm-ochre), var(--earthy-brown)); padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h2 style="color: var(--soft-white); margin-bottom: 1rem;">Interested in My Work?</h2>
+            <p style="color: var(--soft-white); font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Each project represents hours of learning, problem-solving, and innovation. I'm always excited to discuss 
+                my work, share insights, or explore potential collaborations on similar projects.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="contact.html" class="btn" style="background: var(--soft-white); color: var(--earthy-brown);">
+                    Let's Collaborate
+                </a>
+                <a href="https://github.com/d-mg17" target="_blank" class="btn btn-secondary" style="border-color: var(--soft-white); color: var(--soft-white);">
+                    <i class="fab fa-github" style="margin-right: 8px;"></i>
+                    View All Code
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/d-mg17" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/d-mg17" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:d.mg17@outlook.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p style="margin-bottom: 0;">&copy; 2025 Diego Martínez-García. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
