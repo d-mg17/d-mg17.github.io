@@ -141,8 +141,8 @@ p {
 }
 
 .section {
-  min-height: 80vh;
-  padding: 80px 0 80px;
+  min-height: 50vh;
+  padding: 80px 50px 0 80px;
 }
 
 /* Hero Section */
@@ -335,7 +335,7 @@ p {
 
 /* Contact Form */
 .contact-form {
-  max-width: 600px;
+  max-width: 100%;
   background: var(--cream-silk);
   padding: 3rem;
   border: 1px solid var(--mint-cream);
