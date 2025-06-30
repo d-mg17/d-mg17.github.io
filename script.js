@@ -106,8 +106,8 @@ function showNotification(message, type = 'info') {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: ${type === 'success' ? 'var(--pear-green)' : 'var(--warm-ochre)'};
-    color: var(--soft-white);
+    background: ${type === 'success' ? 'var(--sage-green)' : 'var(--caramel)'};
+    color: var(--pearly-white);
     padding: 1rem 2rem;
     border-radius: 10px;
     z-index: 10000;

@@ -1,6 +1,9 @@
 /* styles.css */
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* CSS Variables for Mid-Century Color Palette */
+
+/* CSS Variables or Mid-Century Color Palette */
 :root {
   /* Primary greens - forest and sage */
   --sage-green: #87A96B;
@@ -34,7 +37,7 @@
 }
 
 body {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: "Space Mono", monospace;
   line-height: 1.6;
   color: var(--espresso);
   background-color: var(--pearl-white);
@@ -43,7 +46,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arial', sans-serif;
+  font-family: "Space Mono", monospace;
   color: var(--coffee-bean);
   margin-bottom: 1rem;
   font-weight: 400;
@@ -75,7 +78,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  background: var(--vanilla-cream);
+  background: var(--mocha);
   border-bottom: 1px solid var(--mint-cream);
   z-index: 1000;
   height: 70px;
@@ -91,9 +94,9 @@ p {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--coffee-bean);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--pearl-white);
   text-decoration: none;
   letter-spacing: 0.5px;
 }
@@ -106,9 +109,9 @@ p {
 }
 
 .nav-link {
-  color: var(--espresso);
+  color: var(--pearl-white);
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 0.95rem;
   transition: color 0.2s ease;
   position: relative;
@@ -116,7 +119,7 @@ p {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--forest-green);
+  color: var(--forest-mist);
 }
 
 /* Mobile Menu */
@@ -130,7 +133,7 @@ p {
 .hamburger span {
   width: 22px;
   height: 2px;
-  background: var(--coffee-bean);
+  background: var(--pearl-white);
   transition: 0.3s;
 }
 
@@ -142,7 +145,7 @@ p {
 
 .section {
   min-height: 50vh;
-  padding: 80px 50px 0 80px;
+  padding: 80px 60px;
 }
 
 /* Hero Section */
@@ -194,7 +197,7 @@ p {
 
 .btn-primary {
   background: var(--forest-green);
-  color: var(--pearl-white);
+  color: var(--cream-silk);
 }
 
 .btn-primary:hover {
@@ -209,7 +212,7 @@ p {
 
 .btn-secondary:hover {
   background: var(--coffee-bean);
-  color: var(--pearl-white);
+  color: var(--cream-silk);
 }
 
 /* Card Styles */
@@ -437,7 +440,7 @@ p {
 
 /* Footer */
 .footer {
-  background: var(--vanilla-cream);
+  background: var(--cream-silk);
   color: var(--espresso);
   padding: 4rem 0;
   border-top: 1px solid var(--mint-cream);
@@ -518,7 +521,7 @@ p {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background-color: var(--vanilla-cream);
+    background-color: var(--mocha);
     width: 100%;
     text-align: left;
     transition: 0.3s;
