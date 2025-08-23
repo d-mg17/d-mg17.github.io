@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="d-mg17">
+  <meta name="description" content="Vanilla Weather App using ">
+  <meta name="keywords" content="HTML, CSS, JS, JavaScript, Weather App, Vanilla Weather App">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.css">
+  <title>Vanilla Weather App</title>
+  <link rel="shortcut icon" href="weather_app/images/AppIcon.png" type="image/png" sizes="96x96">
+  <link rel="stylesheet" href="weather_app/style.css">
+</head>
+<body class="has-background-info-light">
+  <header class="hero is-info">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <img src="weather_app/images/AppIcon.png" alt="App Icon">
+        <h1 class="title is-1">Vanilla Weather App</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="panel is-info has-background-white">
+        <h2 class="panel-heading title is-2">How is the weather at ... ?</h2>
+        <form method="POST" class="panel-block has-text-centered">
+          <div class="container">
+            <div class="block">
+              <label class="label is-uppercase has-text-black" for="search-bar">City:</label>
+              <div class="control">
+                <input class="input has-background-white has-text-black has-text-centered is-rounded" type="text" id="search-bar" placeholder="Example: Barcelona" name="city"><br>
+              </div>
+              <span class="help" id="msg"></span>
+            </div>
+            <div class="block">
+              <button class="button is-info is-outlined is-uppercase" id="search-button" type="submit">Find weather</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <div class="box has-background-white">
+        <h2 class="title is-2 has-text-centered has-text-black">Weather at:</h2>
+        <div class="container">
+          <div class="columns is-justify-content-space-between has-text-centered">
+            <div class="column is-3">
+              <img id="weather-icon" src="weather_app/images/AppIcon.png" alt="App Icon">
+              <figcaption class="subtitle is-7 has-text-black" id="icon-description">App Logo</figcaption>
+            </div>
+            <div class="column is-4">
+              <h3 class="title is-3 has-text-black" id="city-name">City Name</h3>
+              <h4 class="title is-4 has-text-black" id="country">Country</h4>
+            </div>
+            <div class="column is-3">
+              <h3 class="title is-3 has-text-black" id="temp">Temp °F</h3>
+              <h5 class="title is-5 has-text-black" id="feels-like">Feels Like °F</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer has-background-info-light has-text-black">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Vanilla Weather App</strong> by Diego Martinez Garcia <strong><a href="https://www.github.com/d-mg17">(github@d-mg17)</a></strong>. The front-end was made using <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The weather data is provided by <a href="https://openweathermap.org">OpenWeatherMap</a>.
+      </p>
+    </div>
+    <div class="content has-text-centered">
+      <p>
+        <strong>Contact me:  <a href="mailto:d.mg17@outlook.com">Mail</a> | <a href="https://www.linkedin.com/in/d-mg17/">LinkedIn</a></strong>
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="weather_app/index.js"></script>
+  <script type="module" src="weather_app/index.js"></script>
+</body>
+</html>
