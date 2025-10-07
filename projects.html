@@ -34,7 +34,6 @@
                 <h1 class="hero-title">My Project Portfolio</h1>
                 <p class="hero-subtitle">Innovation Through Code & Collaboration</p>
                 <p class="hero-description">
-                    From AI-powered platforms to real-time IoT systems, I build solutions that matter. 
                     Each project represents a journey of problem-solving, learning, and pushing the boundaries 
                     of what's possible with technology. Explore my work in machine learning, web development, 
                     and embedded systems.
@@ -51,6 +50,10 @@
     <section class="stats-section" style="background: var(--pearly-white); padding: 4rem 0;">
         <div class="container">
             <div class="grid grid-4">
+                <div class="stat-card card fade-in-up">
+                    <div class="stat-number" style="font-size: 2.5rem; color: var(--caramel); font-weight: bold;">1</div>
+                    <div class="stat-label" style="color: var(--expresso); text-transform: uppercase; letter-spacing: 1px;">Papers Published</div>
+                </div>
                 <div class="stat-card card fade-in-up">
                     <div class="stat-number" style="font-size: 2.5rem; color: var(--caramel); font-weight: bold;">4+</div>
                     <div class="stat-label" style="color: var(--expresso); text-transform: uppercase; letter-spacing: 1px;">Major Projects</div>
@@ -76,6 +79,51 @@
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
             
+            <!-- Project 4: Hands on Wheel ML Model -->
+            <div class="project-card fade-in-up delay-3" style="margin-bottom: 4rem;">
+                <div class="project-image">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="project-content">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="project-title">Hands on Wheel ML Model</h3>
+                        <span style="color: var(--pear-green); font-weight: bold; font-size: 0.9rem;">Jan-Jul 2025</span>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">
+                        Leading cutting-edge research in autonomous driving systems at C.A.W.T. - University of Puerto Rico Mayagüez. 
+                        Constructing comprehensive datasets and implementing advanced CNN-based image classification models. 
+                        The project focuses on real-time processing optimization while maintaining exceptional accuracy rates 
+                        for detecting driver's hands on the streering wheel to make inferences about their focussnes.
+                    </p>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--expresso); margin-bottom: 0.5rem;">Key Achievements:</h4>
+                        <ul style="color: var(--dark-brown); padding-left: 1.5rem;">
+                            <li style="font-weight: bolder; text-transform: uppercase;">Paper publication</li>
+                            <li>95.2% accuracy in image classification tasks</li>
+                            <li>50,000+ training images dataset construction</li>
+                            <li>CNN architecture optimization for real-time processing</li>
+                            <li>Advanced computer vision techniques implementation</li>
+                            <li>Research-grade performance metrics and validation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Dataset Construction</span>
+                        <span class="tech-tag">Research</span>
+                    </div>
+                    <br>
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <a target="_blank" href="https://www.researchgate.net/publication/394971759_Comparative_Study_of_Hands-on-Wheel_Detection_Using_Wearable_LSTM_and_Camera-Based_Vision_Models_for_Driver_Monitoring" class="btn btn-secondary" style="margin-right: 8px;">
+                            Read Paper &gt;&gt;
+                        </a>
+                    </div>
+                </div>
+            </div>
             <!-- Project 1: AI Course Selection Platform -->
             <div class="project-card fade-in-up" style="margin-bottom: 4rem;">
                 <div class="project-image">
@@ -192,44 +240,6 @@
                 </div>
             </div>
 
-            <!-- Project 4: Hands on Wheel ML Model -->
-            <div class="project-card fade-in-up delay-3" style="margin-bottom: 4rem;">
-                <div class="project-image">
-                    <i class="fas fa-microscope"></i>
-                </div>
-                <div class="project-content">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <h3 class="project-title">Hands on Wheel ML Model</h3>
-                        <span style="color: var(--pear-green); font-weight: bold; font-size: 0.9rem;">Jan 2025-Present</span>
-                    </div>
-                    <p style="margin-bottom: 1.5rem;">
-                        Leading cutting-edge research in autonomous driving systems at C.A.W.T. - University of Puerto Rico Mayagüez. 
-                        Constructing comprehensive datasets and implementing advanced CNN-based image classification models. 
-                        The project focuses on real-time processing optimization while maintaining exceptional accuracy rates 
-                        for detecting driver's hands on the streering wheel to make inferences about their focussnes.
-                    </p>
-                    
-                    <div style="margin-bottom: 1.5rem;">
-                        <h4 style="color: var(--expresso); margin-bottom: 0.5rem;">Key Achievements:</h4>
-                        <ul style="color: var(--dark-brown); padding-left: 1.5rem;">
-                            <li>95.2% accuracy in image classification tasks</li>
-                            <li>50,000+ training images dataset construction</li>
-                            <li>CNN architecture optimization for real-time processing</li>
-                            <li>Advanced computer vision techniques implementation</li>
-                            <li>Research-grade performance metrics and validation</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">CNN</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Dataset Construction</span>
-                        <span class="tech-tag">Research</span>
-                    </div>
-                </div>
-            </div>
 
             <!-- Project 5: Vanilla Weather App -->
             <div class="project-card fade-in-up delay-3" style="margin-bottom: 4rem;">
@@ -260,7 +270,7 @@
                         <span class="tech-tag">OpenWeatherMap API</span>
                         <span class="tech-tag">Front-end Desing</span>
                     </div>
-
+                    <br>
                     <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
                         <a href="weather.html" class="btn btn-secondary" style="margin-right: 8px;">
                             Open Weather App!
