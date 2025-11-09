@@ -119,7 +119,7 @@ p {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--forest-mist);
+  color: #a5cf83;
 }
 
 /* Mobile Menu */
@@ -178,7 +178,7 @@ p {
 .hero-description {
   font-size: 1.1rem;
   color: var(--mocha);
-  max-width: 500px;
+  max-width: 800px;
   margin-bottom: 3rem;
 }
 
